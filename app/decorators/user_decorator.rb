@@ -1,4 +1,4 @@
-User.instance_eval do 
+Spree::User.instance_eval do 
   
   has_one :wholesaler
     
@@ -7,7 +7,7 @@ User.instance_eval do
     
 end
 
-User.class_eval do 
+Spree::User.class_eval do 
   
   def wholesaler?
     has_role?("wholesaler") && !wholesaler.nil?

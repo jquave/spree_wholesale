@@ -1,4 +1,4 @@
-[Spree::BaseController, Admin::BaseController].each do |controller|
+[Spree::BaseController, Spree::Admin::BaseController].each do |controller|
 
   controller.class_eval do
     

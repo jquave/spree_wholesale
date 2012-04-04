@@ -1,4 +1,4 @@
-Order.class_eval do 
+Spree::Order.class_eval do 
 
   def wholesale
     read_attribute(:wholesale) && !wholesaler.nil?

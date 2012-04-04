@@ -1,4 +1,4 @@
-LineItem.class_eval do 
+Spree::LineItem.class_eval do 
   
   delegate_belongs_to :variant, :wholesale_price
   delegate_belongs_to :variant, :is_wholesaleable?

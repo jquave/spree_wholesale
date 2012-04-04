@@ -1,4 +1,4 @@
-Variant.class_eval do 
+Spree::Variant.class_eval do 
   scope :wholesales, where("variants.wholesale_price > 0")
   
   def is_wholesaleable?

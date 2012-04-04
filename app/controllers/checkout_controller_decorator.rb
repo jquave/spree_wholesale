@@ -1,9 +1,9 @@
-CheckoutController.instance_eval do 
+Spree::CheckoutController.instance_eval do 
   before_filter :get_addresses
   before_filter :remove_payments_attributes
 end
 
-CheckoutController.class_eval do 
+Spree::CheckoutController.class_eval do 
 
   def get_addresses
     return unless current_user && current_user.wholesaler? && !current_user.wholesaler.nil?
