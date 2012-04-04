@@ -1,6 +1,6 @@
 Spree::Product.instance_eval do 
 
-  delegate_belongs_to :master, :wholesale_price if Variant.table_exists? && Variant.column_names.include?("wholesale_price")
+  delegate_belongs_to :master, :wholesale_price if Spree::Variant.table_exists? && Spree::Variant.column_names.include?("wholesale_price")
   
 end
 
