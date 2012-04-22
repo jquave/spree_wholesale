@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency('spree_core', '~> 1.0.0')
   s.add_dependency('spree_auth', '~> 1.0.0')
   
+  s.add_development_dependency('spree_sample',     '~> 1.0.0')
   s.add_development_dependency('shoulda',          '>= 3.0.0.beta2')
   s.add_development_dependency('factory_girl',     '>= 2.4.2')
 	s.add_development_dependency('capybara',         '>= 1.1.1')	
