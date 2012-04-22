@@ -1,4 +1,4 @@
-class Admin::WholesalersController < Admin::ResourceController
+class Spree::Admin::WholesalersController < Admin::ResourceController
   respond_to :html, :xml  
   before_filter :approval_setup, :only => [ :approve, :reject ]
   

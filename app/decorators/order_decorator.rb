@@ -1,4 +1,4 @@
-Order.class_eval do 
+Spree::Order.class_eval do 
 
   def wholesale
     read_attribute(:wholesale) && !wholesaler.nil?
@@ -40,7 +40,7 @@ Order.class_eval do
       current_item.quantity += quantity
       current_item.save
     else
-      current_item = LineItem.new(:quantity => quantity)
+      current_item = Spree::LineItem.new(:quantity => quantity)
       current_item.variant = variant
       current_item.price   = is_wholesale? ? variant.wholesale_price : variant.price
       self.line_items << current_item

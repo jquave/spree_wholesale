@@ -1,7 +1,7 @@
-Rails.application.routes.draw do
-
-  get '/wholesaler/states' => "wholesaler_states#index"
+Spree::Core::Engine.routes.draw do
     
+  get '/wholesaler/states' => "wholesaler_states#index"
+  
   resources :wholesalers
   
   namespace(:admin) do
@@ -13,6 +13,6 @@ Rails.application.routes.draw do
       end
     end
     
-  end
-
+  end  
+  
 end
